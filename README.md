@@ -1,7 +1,9 @@
-#Code Sensai App
+##Code Sensai App
+
 This repository contains the Code Explanation App, a tool designed to provide clear and concise explanations of code snippets. The app leverages the capabilities of the PaLM 2 (Legacy) model to generate explanations.
 
-Features
+##Features
+
 Interactive Interface: Users can input any code snippet to receive an explanation.
 Text Generation: Utilizes the text-bison-001 model for generating explanations and responses.
 Flexible Output: Adjust the temperature and token limits to control the randomness and length of the generated text.
