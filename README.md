@@ -53,8 +53,8 @@ The app provides a web-based interface using Gradio for ease of use:
 import gradio as gr
 
 # Define the function for generating explanations
+
 def get_completion(text):
-    
     completion = palm.generate_text(
         model=models[0],
         prompt=text,
@@ -64,6 +64,7 @@ def get_completion(text):
     return completion.result
 
 # Setup the Gradio interface
+
 iface = gr.Interface(
     fn=get_completion,
     inputs=[gr.Textbox(label="Insert Code Snippet")],
