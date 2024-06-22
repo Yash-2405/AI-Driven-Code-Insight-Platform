@@ -1,7 +1,8 @@
-Code Explanation App
+# Code Explanation App
+
 This repository contains the Code Explanation App, a tool designed to provide clear and concise explanations of code snippets. The app leverages the capabilities of the PaLM 2 (Legacy) model to generate explanations.
 
-Features
+# Features
 Interactive Interface: Users can input any code snippet to receive an explanation.
 
 Text Generation: Utilizes the text-bison-001 model for generating explanations and responses.
@@ -10,11 +11,11 @@ Flexible Output: Adjust the temperature and token limits to control the randomne
 
 Gradio Integration: Easy-to-use web interface powered by Gradio for seamless user interaction.
 
-Notebook Content
+# Notebook Content
 
-Setup and Model Initialization
+# Setup and Model Initialization
 
-The notebook begins with setting up the necessary environment and loading the required models:
+# The notebook begins with setting up the necessary environment and loading the required models:
 
 import palm
 import os
@@ -26,7 +27,8 @@ palm.configure(api_key=api_key)
 # Listing available models
 models = [model.name for model in palm.list_models() if model.name == "models/text-bison-001"]
 
-Simple Chatbot
+# Simple Chatbot
+
 An example of using the model to generate text based on a prompt:
 
 # Define the input prompt
@@ -42,7 +44,8 @@ completion = palm.generate_text(
 )
 print(completion.result)
 
-Web Interface
+# Web Interface
+
 The app provides a web-based interface using Gradio for ease of use:
 
 import gradio as gr
@@ -66,28 +69,32 @@ iface = gr.Interface(
 )
 iface.launch(share=True, debug=True)
 
-How to Run
+# How to Run
+
 Clone the Repository:
 
 git clone https://github.com/your_username/code-explanation-app.git
 cd code-explanation-app
 
-Install Dependencies:
+# Install Dependencies:
+
 Ensure you have all the required packages installed. You can use pip to install them:
 
 pip install -r requirements.txt
 
 
-Set Up API Key:
+# Set Up API Key:
+
 Make sure you have your PaLM API key set up in your environment variables:
 
 export PALM_API_KEY='your_api_key'
 
-Run the Notebook:
+# Run the Notebook:
 Open the Jupyter Notebook and run all cells to ensure everything is set up correctly.
 
-Launch the Gradio Interface:
+# Launch the Gradio Interface:
+
 Run the Gradio interface cell to start the web application. You will get a shareable link to interact with the app.
 
-Contributions
+# Contributions
 Feel free to fork this repository, make improvements, and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
