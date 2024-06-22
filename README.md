@@ -1,17 +1,19 @@
-##Code Sensai App
-
+Code Explanation App
 This repository contains the Code Explanation App, a tool designed to provide clear and concise explanations of code snippets. The app leverages the capabilities of the PaLM 2 (Legacy) model to generate explanations.
 
-##Features
-
+Features
 Interactive Interface: Users can input any code snippet to receive an explanation.
 Text Generation: Utilizes the text-bison-001 model for generating explanations and responses.
 Flexible Output: Adjust the temperature and token limits to control the randomness and length of the generated text.
 Gradio Integration: Easy-to-use web interface powered by Gradio for seamless user interaction.
+
 Notebook Content
+
 Setup and Model Initialization
+
 The notebook begins with setting up the necessary environment and loading the required models:
-**import palm
+
+import palm
 import os
 
 # API Key setup
@@ -20,7 +22,6 @@ palm.configure(api_key=api_key)
 
 # Listing available models
 models = [model.name for model in palm.list_models() if model.name == "models/text-bison-001"]
-**
 
 Simple Chatbot
 An example of using the model to generate text based on a prompt:
@@ -62,7 +63,7 @@ iface = gr.Interface(
 )
 iface.launch(share=True, debug=True)
 
-#How to Run
+How to Run
 Clone the Repository:
 
 git clone https://github.com/your_username/code-explanation-app.git
@@ -72,6 +73,7 @@ Install Dependencies:
 Ensure you have all the required packages installed. You can use pip to install them:
 
 pip install -r requirements.txt
+
 
 Set Up API Key:
 Make sure you have your PaLM API key set up in your environment variables:
