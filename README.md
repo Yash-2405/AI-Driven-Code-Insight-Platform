@@ -33,9 +33,11 @@ An example of using the model to generate text based on a prompt:
 
 # Define the input prompt
 prompt1 = "Why is the Sky blue? Provide answers in bullet format in clear and concise manner."
+
 prompt2 = "Why is Generative AI growing so much?"
 
 # Generate the text
+
 completion = palm.generate_text(
     model = models[0],
     prompt = prompt1,
