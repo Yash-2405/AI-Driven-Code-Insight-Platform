@@ -3,8 +3,11 @@ This repository contains the Code Explanation App, a tool designed to provide cl
 
 Features
 Interactive Interface: Users can input any code snippet to receive an explanation.
+
 Text Generation: Utilizes the text-bison-001 model for generating explanations and responses.
+
 Flexible Output: Adjust the temperature and token limits to control the randomness and length of the generated text.
+
 Gradio Integration: Easy-to-use web interface powered by Gradio for seamless user interaction.
 
 Notebook Content
