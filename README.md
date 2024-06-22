@@ -54,6 +54,7 @@ import gradio as gr
 
 # Define the function for generating explanations
 def get_completion(text):
+    
     completion = palm.generate_text(
         model=models[0],
         prompt=text,
