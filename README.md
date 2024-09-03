@@ -1,4 +1,4 @@
-# Code Explanation App
+# AI-Driven Code Insight Platform
 
 This repository contains the Code Explanation App, a tool designed to provide clear and concise explanations of code snippets. The app leverages the capabilities of the PaLM 2 (Legacy) model to generate explanations.
 
