@@ -35,6 +35,8 @@ An intelligent code assistant built using **Python**, **Gradio**, and **OpenAI A
 - Add model selection between GPT-3.5, GPT-4, Claude, etc.
 - Save user sessions or chat history for learning continuity
 
-Author 
+**Author** 
+
 Yash V
+
 [LinkedIn](https://www.linkedin.com/in/yash-v-/) | [Github](https://github.com/Yash-2405)
