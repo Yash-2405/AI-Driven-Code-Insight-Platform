@@ -13,7 +13,7 @@ An intelligent code assistant built using **Python**, **Gradio**, and **OpenAI A
 ## 🔧 Tech Stack
 
 - Python
-- OpenAI GPT API
+- Gemini Palm API
 - Gradio (for frontend interaction)
 
 ## 📊 Impact
